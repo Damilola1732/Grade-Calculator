@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+.container {
+    background-color: rgb(214, 202, 24);
+    color: rgb(0, 0, 0);
+    height: 39rem;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 12px 12px 
+}
+
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-arm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grade{
+    max-width: 16rem;
+    height: 1.25rem;
+    display: flex;
+    
+}
+.right-arm > input {
+    /* margin-bottom: 1.2rem; */
+    max-width: 5rem;
+    padding: 5px 0px;
+    background-color: lightgoldenrodyellow;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+select, input {
+    max-width: 300px;
+    border: 50px;
+    height: 25px;
+    font-size: 1rem;
+}
+.subject{
+    /* display: none;
+    position: absolute; */
+    background-color: #cf1616;
+    max-width: 7rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* padding: 12px 16px;  */
+    color: white;
+   
+}
+
+.subject{
+    /* color: rgb(15, 15, 15); */
+    width: 300px;
+}
+
+.right-arm > input::placeholder{
+    color: purple;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 2rem;
+}
+
+.right-arm> button{
+    width: 200px;
+    height: 2.5rem;
+    background-color:rgb(20, 223, 64);
+    color: black;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-weight: 600 ;
+    font-size: 16px;
+}
+
+.left-arm > h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    border-right: 3px solid white;
+    padding-right: 8px
+}
+
+option{
+    font-size: 1.5rem;
+    
+}
+input{
+    padding-left;: 0.7rem
+   
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+label{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
