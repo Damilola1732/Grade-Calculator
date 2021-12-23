@@ -16,7 +16,7 @@ body{
 .container {
     background-color: rgb(214, 202, 24);
     color: rgb(0, 0, 0);
-    height: 39rem;
+    height: 42rem;
     width: 40rem;
     display: flex;
     flex-direction: column;
@@ -43,10 +43,11 @@ body{
     max-width: 16rem;
     height: 1.25rem;
     display: flex;
+    margin-left: 1rem;
     
 }
-.right-arm > input {
-    /* margin-bottom: 1.2rem; */
+/* .right-arm > input {
+     margin-bottom: 1.2rem; 
     max-width: 5rem;
     padding: 5px 0px;
     background-color: lightgoldenrodyellow;
@@ -54,12 +55,15 @@ body{
     outline: none;
     font-size: 16px;
     font-weight: 400;
-}
+} */
 select, input {
     max-width: 300px;
     border: 50px;
     height: 25px;
     font-size: 1rem;
+    background-color: lightgoldenrodyellow;
+    font-weight: 400;
+    outline: none;
 }
 .subject{
     /* display: none;
@@ -109,8 +113,9 @@ option{
     font-size: 1.5rem;
     
 }
-input{
-    padding-left;: 0.7rem
+input[type=number]{
+    padding:0.5rem;
+    width: 100%;
    
 }
 input::-webkit-outer-spin-button,
@@ -121,4 +126,72 @@ input::-webkit-inner-spin-button {
 label{
     font-size: 1.2rem;
     font-weight: 600;
+}
+#showResult{
+    padding: 1rem;
+}
+
+@media screen and (max-width:500px) {
+    .container{
+       
+        height: 42rem;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .grade{
+        width: 15rem;
+        height: 1.25rem;
+        display: flex;
+        margin-left: 1rem;     
+    }
+
+    select, input {
+        max-width: 75px;
+        border: 50px;
+        height: 25px;
+        font-size: 1rem;
+        background-color: lightgoldenrodyellow;
+        font-weight: 400;
+        outline: none;
+    }
+    .right-arm> button{
+        width: 10rem;
+        height: 3rem;
+        background-color:rgb(20, 223, 64);
+        color: black;
+        border: none;
+        border-radius: 7px;
+        outline: none;
+        cursor: pointer;
+        padding: 5px 10px;
+        font-weight: 700 ;
+        font-size: 1rem;
+    }
+    label{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    option{
+        font-size: 1rem;
+        
+    }
+    .left-arm > h2 {
+        font-size: 2rem;
+        font-weight: 750;
+        border-right: 4px solid white;
+        padding-right: 8px
+    }
+}
+
+@media screen and (max-width:350px){
+    .left-arm > h2 {
+        font-size: 1.3rem;
+        font-weight: 750;
+        border-right: 4px solid white;
+        /* padding-right: 8px */
+    }
 }
